@@ -57,6 +57,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["react-scripts", "virtual:01dc71835531246a40e40e58494876cc1aff659fbb14962b0288e203a626ba9d11251c146ac0de56c361048f8a7e9c168440bf4a3efa6dcd9e110d95cc6bacdf#npm:5.0.1"],\
             ["recoil", "virtual:01dc71835531246a40e40e58494876cc1aff659fbb14962b0288e203a626ba9d11251c146ac0de56c361048f8a7e9c168440bf4a3efa6dcd9e110d95cc6bacdf#npm:0.7.6"],\
             ["styled-components", "virtual:01dc71835531246a40e40e58494876cc1aff659fbb14962b0288e203a626ba9d11251c146ac0de56c361048f8a7e9c168440bf4a3efa6dcd9e110d95cc6bacdf#npm:5.3.6"],\
+            ["styled-reset", "virtual:01dc71835531246a40e40e58494876cc1aff659fbb14962b0288e203a626ba9d11251c146ac0de56c361048f8a7e9c168440bf4a3efa6dcd9e110d95cc6bacdf#npm:4.4.2"],\
             ["typescript", "patch:typescript@npm%3A4.8.4#~builtin<compat/typescript>::version=4.8.4&hash=701156"],\
             ["web-vitals", "npm:2.1.4"]\
           ],\
@@ -6510,6 +6511,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["react-scripts", "virtual:01dc71835531246a40e40e58494876cc1aff659fbb14962b0288e203a626ba9d11251c146ac0de56c361048f8a7e9c168440bf4a3efa6dcd9e110d95cc6bacdf#npm:5.0.1"],\
             ["recoil", "virtual:01dc71835531246a40e40e58494876cc1aff659fbb14962b0288e203a626ba9d11251c146ac0de56c361048f8a7e9c168440bf4a3efa6dcd9e110d95cc6bacdf#npm:0.7.6"],\
             ["styled-components", "virtual:01dc71835531246a40e40e58494876cc1aff659fbb14962b0288e203a626ba9d11251c146ac0de56c361048f8a7e9c168440bf4a3efa6dcd9e110d95cc6bacdf#npm:5.3.6"],\
+            ["styled-reset", "virtual:01dc71835531246a40e40e58494876cc1aff659fbb14962b0288e203a626ba9d11251c146ac0de56c361048f8a7e9c168440bf4a3efa6dcd9e110d95cc6bacdf#npm:4.4.2"],\
             ["typescript", "patch:typescript@npm%3A4.8.4#~builtin<compat/typescript>::version=4.8.4&hash=701156"],\
             ["web-vitals", "npm:2.1.4"]\
           ],\
@@ -16248,6 +16250,28 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             "react-dom",\
             "react-is",\
             "react"\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["styled-reset", [\
+        ["npm:4.4.2", {\
+          "packageLocation": "./.yarn/cache/styled-reset-npm-4.4.2-6f715641a7-1ee15f6391.zip/node_modules/styled-reset/",\
+          "packageDependencies": [\
+            ["styled-reset", "npm:4.4.2"]\
+          ],\
+          "linkType": "SOFT"\
+        }],\
+        ["virtual:01dc71835531246a40e40e58494876cc1aff659fbb14962b0288e203a626ba9d11251c146ac0de56c361048f8a7e9c168440bf4a3efa6dcd9e110d95cc6bacdf#npm:4.4.2", {\
+          "packageLocation": "./.yarn/__virtual__/styled-reset-virtual-ca29dcca97/0/cache/styled-reset-npm-4.4.2-6f715641a7-1ee15f6391.zip/node_modules/styled-reset/",\
+          "packageDependencies": [\
+            ["styled-reset", "virtual:01dc71835531246a40e40e58494876cc1aff659fbb14962b0288e203a626ba9d11251c146ac0de56c361048f8a7e9c168440bf4a3efa6dcd9e110d95cc6bacdf#npm:4.4.2"],\
+            ["@types/styled-components", "npm:5.1.26"],\
+            ["styled-components", "virtual:01dc71835531246a40e40e58494876cc1aff659fbb14962b0288e203a626ba9d11251c146ac0de56c361048f8a7e9c168440bf4a3efa6dcd9e110d95cc6bacdf#npm:5.3.6"]\
+          ],\
+          "packagePeers": [\
+            "@types/styled-components",\
+            "styled-components"\
           ],\
           "linkType": "HARD"\
         }]\
