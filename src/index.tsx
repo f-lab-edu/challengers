@@ -9,6 +9,7 @@ import { ThemeProvider } from 'styled-components';
 import theme from './styles/theme';
 import { QueryClient, QueryClientProvider } from 'react-query';
 import { ReactQueryDevtools } from 'react-query/devtools';
+import { BrowserRouter } from 'react-router-dom';
 
 const queryClient = new QueryClient();
 
@@ -18,14 +19,16 @@ const root = ReactDOM.createRoot(
 root.render(
   <>
     <GlobalStyles />
-    <QueryClientProvider client={queryClient}>
-      {/* devtools */}
-      <RecoilRoot>
-        <ThemeProvider theme={theme}>
-          <App />
-        </ThemeProvider>
-      </RecoilRoot>
-    </QueryClientProvider>
+    <ThemeProvider theme={theme}>
+      <BrowserRouter>
+        <QueryClientProvider client={queryClient}>
+          {/* devtools */}
+          <RecoilRoot>
+            <App />
+          </RecoilRoot>
+        </QueryClientProvider>
+      </BrowserRouter>
+    </ThemeProvider>
   </>
 );
 // If you want to start measuring performance in your app, pass a function
