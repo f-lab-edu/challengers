@@ -18,6 +18,20 @@ module.exports = {
     ecmaVersion: 'latest',
     sourceType: 'module',
   },
-  plugins: ['react', '@typescript-eslint'],
-  rules: { '@typescript-eslint/no-inferrable-types': 'off' },
+  plugins: ['react', 'react-hooks', '@typescript-eslint', 'prettier'],
+  rules: {
+    '@typescript-eslint/no-inferrable-types': 'off',
+    'react-hooks/rules-of-hooks': 'error',
+    'react-hooks/exhaustive-deps': [
+      'warn',
+      {
+        additionalHooks: 'useRecoilCallback',
+      },
+    ],
+  },
+  settings: {
+    react: {
+      version: 'detect',
+    },
+  },
 };
