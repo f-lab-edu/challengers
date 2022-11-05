@@ -2,6 +2,7 @@ import React from 'react';
 import axios from 'axios';
 import Button from 'components/common/Button';
 import theme from 'styles/theme';
+import Logo from 'components/common/Logo';
 
 const Home = () => {
   axios
@@ -21,6 +22,7 @@ const Home = () => {
           console.log(1);
         }}
       />
+      <Logo />
     </div>
   );
 };
