@@ -15,7 +15,8 @@ const Home = () => {
       <Button
         width={'7rem'}
         title="버튼 테스트"
-        color={theme.colors.red}
+        color={theme.colors.white}
+        backgroundColor={theme.colors.red}
         onClick={() => {
           console.log(1);
         }}

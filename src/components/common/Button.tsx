@@ -7,27 +7,35 @@ const StyledButton = styled.button<StyledButton>`
   width: ${(props) => props.width};
   font-size: ${theme.fontSizes.base};
   font-weight: ${theme.fontWeights.extraBold};
-  background-color: ${(props) => props.color};
-  border-radius: 8px;
+  background-color: ${(props) => props.backgroundColor};
+  color: ${(props) => props.color};
+  border-radius: 0.5rem;
   border: none;
   cursor: pointer;
 `;
 
 interface StyledButton {
   width: string;
+  backgroundColor: string;
   color: string;
 }
 
 interface Button {
   width: string;
   title: string;
+  backgroundColor: string;
   color: string;
   onClick: () => void;
 }
 
-function Button({ width, title, color, onClick }: Button) {
+function Button({ width, title, backgroundColor, color, onClick }: Button) {
   return (
-    <StyledButton width={width} color={color} onClick={onClick}>
+    <StyledButton
+      width={width}
+      backgroundColor={backgroundColor}
+      color={color}
+      onClick={onClick}
+    >
       {title}
     </StyledButton>
   );
