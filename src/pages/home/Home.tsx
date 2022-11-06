@@ -3,6 +3,7 @@ import axios from 'axios';
 import Button from 'components/common/Button';
 import theme from 'styles/theme';
 import Logo from 'components/common/Logo';
+import SearchBar from 'components/common/SearchBar';
 
 const Home = () => {
   axios
@@ -23,6 +24,7 @@ const Home = () => {
         }}
       />
       <Logo />
+      <SearchBar onChange={() => console.log(1)} />
     </div>
   );
 };
