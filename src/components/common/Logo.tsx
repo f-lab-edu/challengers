@@ -6,6 +6,8 @@ import logo from '../../assets/logo.png';
 
 const Wrapper = styled.div`
   ${theme.flex.flexBox('row', 'flexstart', 'center')}
+  cursor: pointer;
+  user-select: none;
 `;
 
 const StyledLogo = styled.img.attrs({

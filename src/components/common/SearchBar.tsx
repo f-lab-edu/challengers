@@ -1,7 +1,9 @@
-import React from 'react';
+import React, { ChangeEvent, useState } from 'react';
 import styled from 'styled-components';
 import searchIcon from '../../assets/MagnifyingGlass.png';
 import theme from 'styles/theme';
+import { atom, useRecoilState } from 'recoil';
+import searchTitleState from 'store/state/atom';
 
 const Label = styled.label`
   background-color: ${theme.colors.lightGray};
@@ -26,18 +28,25 @@ const Label = styled.label`
   button {
     border: none;
     background-color: ${theme.colors.lightGray};
+    cursor: pointer;
   }
 `;
 
-interface SearchBar {
-  onChange: () => void;
-}
+function SearchBar() {
+  const [searchTitle, setSearchTitle] = useRecoilState(searchTitleState);
 
-function SearchBar({ onChange }: SearchBar) {
+  const onChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setSearchTitle(e.target.value);
+  };
+
+  const onClick = () => {
+    console.log(searchTitle);
+  };
+
   return (
     <Label>
       <input placeholder="검색어를 입력해주세요" onChange={onChange} />
-      <button>
+      <button onClick={onClick}>
         <img src={searchIcon} />
       </button>
     </Label>
