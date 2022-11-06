@@ -1,8 +1,8 @@
-import React, { ChangeEvent, useState } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 import searchIcon from '../../assets/MagnifyingGlass.png';
 import theme from 'styles/theme';
-import { atom, useRecoilState } from 'recoil';
+import { useRecoilState } from 'recoil';
 import searchTitleState from 'store/state/atom';
 
 const Label = styled.label`
