@@ -4,6 +4,7 @@ import Button from 'components/common/Button';
 import theme from 'styles/theme';
 import Logo from 'components/common/Logo';
 import SearchBar from 'components/common/SearchBar';
+import MakeItemButton from 'components/home/MakeItemButton';
 
 const Home = () => {
   axios
@@ -25,6 +26,7 @@ const Home = () => {
       />
       <Logo />
       <SearchBar onChange={() => console.log(1)} />
+      <MakeItemButton />
     </div>
   );
 };
