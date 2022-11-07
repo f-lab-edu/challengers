@@ -33,6 +33,7 @@ const Home = () => {
         startDate={new Date()}
         period={2}
       ></ChallengeItem>
+      <Navbar />
     </div>
   );
 };

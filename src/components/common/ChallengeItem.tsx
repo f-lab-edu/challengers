@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import theme from 'styles/theme';
-import logo from '../../assets/logo.png';
+import logo from '../../assets/Logo.png';
 import { useNavigate } from 'react-router-dom';
 
 const Wrapper = styled.div`

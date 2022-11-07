@@ -2,7 +2,7 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import styled from 'styled-components';
 import theme from 'styles/theme';
-import logo from '../../assets/logo.png';
+import logo from '../../assets/Logo.png';
 
 const Wrapper = styled.div`
   ${theme.flex.flexBox('row', 'flexstart', 'center')}

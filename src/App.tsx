@@ -21,7 +21,9 @@ function App() {
 }
 
 const Wrapper = styled.div`
+  /* 추후 white로 변경 */
   background-color: ${theme.colors.yellow};
+  padding: 0 3rem;
 `;
 
 export default App;
