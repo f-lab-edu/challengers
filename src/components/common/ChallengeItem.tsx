@@ -7,8 +7,9 @@ import { useNavigate } from 'react-router-dom';
 const Wrapper = styled.div`
   ${theme.flex.flexBox('column', 'space-between', '')}
   position: relative;
-  width: 15rem;
+  width: 12rem;
   height: 15rem;
+  margin: 0 Calc((100% - 12rem * 5) / 10);
   cursor: pointer;
   user-select: none;
 `;

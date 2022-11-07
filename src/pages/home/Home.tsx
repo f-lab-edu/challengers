@@ -7,6 +7,7 @@ import SearchBar from 'components/common/SearchBar';
 import MakeItemButton from 'components/common/MakeItemButton';
 import Navbar from 'components/common/Navbar';
 import ChallengeItem from 'components/common/ChallengeItem';
+import ChallengeItemList from 'components/home/ChallengeItemList';
 
 const Home = () => {
   axios
@@ -17,7 +18,7 @@ const Home = () => {
     <div>
       <h1>홈</h1>
       <p>이곳은 홈이에요. 가장 먼저 보여지는 페이지죠.</p>
-      <Button
+      {/* <Button
         width={'7rem'}
         title="버튼 테스트"
         color={theme.colors.white}
@@ -25,15 +26,16 @@ const Home = () => {
         onClick={() => {
           console.log(1);
         }}
-      />
-      <ChallengeItem
+      /> */}
+      {/* <ChallengeItem
         id={1}
         title={'물 한 잔 마시기'}
         deposit={200}
         startDate={new Date()}
         period={2}
-      ></ChallengeItem>
+      ></ChallengeItem> */}
       <Navbar />
+      <ChallengeItemList />
     </div>
   );
 };
