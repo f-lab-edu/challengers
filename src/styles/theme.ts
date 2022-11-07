@@ -15,8 +15,8 @@ const fontWeights = {
   light: '300',
   regular: '400',
   bold: '500',
-  semiBold: '600',
-  extraBold: '700',
+  semiBold: '700',
+  extraBold: '900',
 };
 
 const paddings = {
