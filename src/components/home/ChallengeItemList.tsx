@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import ChallengeItem from 'components/common/ChallengeItem';
 import theme from 'styles/theme';
+import axios from 'axios';
 
 const Wrapper = styled.div`
   ${theme.flex.flexBox('row', 'flex-start', 'center')}
