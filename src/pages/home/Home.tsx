@@ -2,10 +2,6 @@ import React from 'react';
 import axios from 'axios';
 import Button from 'components/common/Button';
 import theme from 'styles/theme';
-import Logo from 'components/common/Logo';
-import SearchBar from 'components/common/SearchBar';
-import MakeItemButton from 'components/common/MakeItemButton';
-import Navbar from 'components/common/Navbar';
 import ChallengeItem from 'components/common/ChallengeItem';
 
 const Home = () => {
