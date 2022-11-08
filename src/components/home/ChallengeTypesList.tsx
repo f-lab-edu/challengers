@@ -18,6 +18,9 @@ const {
 
 const Wrapper = styled.div`
   ${theme.flex.flexBox('row', 'space-between', 'center')}
+  height: 6rem;
+  position: sticky;
+  top: 20rem;
 `;
 
 const TypeWrapper = styled.div`

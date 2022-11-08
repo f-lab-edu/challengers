@@ -11,6 +11,8 @@ const Wrapper = styled.div`
   ${theme.flex.flexBox('row', 'space-between', 'center')}
   background-color: ${theme.colors.white};
   height: 6rem;
+  position: sticky;
+  top: 0rem;
 `;
 
 function Navbar() {
